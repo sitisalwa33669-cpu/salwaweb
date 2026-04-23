@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Belajar HTML & CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Selamat Datang di Web Latihan</h1>
+        <p>Halaman ini menampilkan kombinasi berbagai tag HTML dasar hingga menengah.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Selamat Datang Di One Piece</h2>
+            <p>Di sini kita belajar menggunakan teks <b>tebal</b>, <i>miring</i>, dan <u>bergaris bawah</u>.</p>
+            
+            <div class="image-container">
+                <img src="ChatGPT Image Apr 15, 2026, 07_22_56 AM.png" alt="Coding Image">
+                <p><a href="https://google.com" target="_blank">Klik di sini untuk mencari referensi lebih lanjut</a></p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>Daftar Materi yang Dipelajari</h3>
+            <div class="lists">
+                <div>
+                    <h4>Daftar Berurutan (Ordered List)</h4>
+                    <ol>
+                        <li>Memahami Struktur HTML</li>
+                        <li>Mengenal Tag Dasar</li>
+                        <li>Implementasi CSS</li>
+                    </ol>
+                </div>
+                <div>
+                    <h4>Daftar Poin (Unordered List)</h4>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript Dasar</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>Jadwal Belajar</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hari</th>
+                        <th>Topik</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Senin</td>
+                        <td>HTML Dasar</td>
+                        <td>Selesai</td>
+                    </tr>
+                    <tr>
+                        <td>Selasa</td>
+                        <td>CSS Layouting</td>
+                        <td>Proses</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>Formulir Pendaftaran</h3>
+            <form action="#">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama..." >
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="contoh@mail.com" >
+
+                <label for="tanggal">Tanggal Lahir:</label>
+                <input type="date" id="tanggal" name="tanggal" >
+
+                <button type="submit">Kirim Data</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p align="center">&copy; 2024 Teknik informatika</p>
+    </footer>
+
+    <!-- INLINE JS -->
+    <button onclick="alert('halo informatika')">tombol submit</button>
+
+    <!-- FIX UTAMA DI SINI -->
+    <script>
+        // pastikan semua HTML sudah kebaca dulu
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("HTML sudah siap");
+        });
+    </script>
+
+    <!-- JS KAMU -->
+    <script src="script.js"></script>
+
+</body>
+</html>

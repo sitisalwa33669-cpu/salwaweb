@@ -1,0 +1,123 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header & Footer */
+header, footer {
+    text-align: center;
+    background-color: #b416ed;
+    color: rgb(234, 11, 11);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Heading & Text Color */
+h1, h2, h3 {
+    color: #625ea3; /* Mengubah warna teks heading */
+    margin-bottom: 15px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Image styling */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #2980b9;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* Validasi sederhana via CSS */
+input:invalid:focus {
+    border: 2px solid #e74c3c;
+}
+
+input:valid:focus {
+    border: 2px solid #2ecc71;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #219150;
+}
+
+.lists {
+    display: flex;
+    justify-content: space-between;
+}
