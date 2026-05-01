@@ -34,5 +34,5 @@ Proyek ini adalah sebuah website statis sederhana yang dirancang untuk mendemons
 
 ### Screenshot Struktur Halaman
 ![ss-an.web](ss-an.web/tampilan-1)
-![ss-an.web](ss-an.web/tampilan-1)
-![ss-an.web](ss-an.web/tampilan-1)
+![ss-an.web](ss-an.web/tampilan-2)
+![ss-an.web](ss-an.web/tampilan-3)
