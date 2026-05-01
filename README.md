@@ -1,38 +1,59 @@
-# Portofolio Belajar HTML, CSS, & JavaScript
+Berikut adalah file **README.md** untuk proyek kamu. Isinya fokus pada teknis dan langkah instalasi tanpa gaya bahasa asisten AI.
 
-Proyek ini adalah sebuah website statis sederhana yang dirancang untuk mendemonstrasikan pemahaman dasar mengenai struktur HTML5, desain layout dengan CSS3, serta logika interaktif menggunakan JavaScript (ES6).
+---
 
-## 🚀 Fitur Utama
+# Latihan CRUD PHP & MySQL - Siti Salwa
 
-* Struktur Semantik: Menggunakan tag HTML5 seperti `<header>`, `<main>`, `<section>`, dan `<footer>`.
-* Desain Responsif: Layout yang rapi dengan CSS box-shadow, flexbox untuk daftar materi, dan tabel data yang terorganisir.
-* Logika JavaScript:
-    * Manipulasi DOM (mengubah judul secara dinamis).
-    * Validasi formulir pendaftaran sebelum data dikirim.
-    * Implementasi Event Listeners, Functions, dan Loops di konsol.
-* Validasi Visual: Input form memiliki feedback warna (hijau/merah) saat fokus menggunakan pseudo-class CSS.
+Proyek ini adalah implementasi dasar pengolahan data (Create & Read) menggunakan PHP dan database MySQL. Dibuat sebagai bagian dari praktikum mata kuliah Teknik Informatika.
 
-## 📂 Struktur File
+## Fitur Utama
+*   Input data nama dan email melalui form.
+*   Penyimpanan data ke database MySQL.
+*   Tampilan daftar kunjungan dalam bentuk tabel secara real-time.
+*   Validasi form (Nama dan Email tidak boleh kosong).
+*   Notifikasi sukses menggunakan PHP Session.
 
-* `index.html`: Struktur utama halaman web, termasuk form, tabel, dan daftar materi.
-* `style.css`: Pengaturan gaya visual, tipografi, dan tata letak.
-* `script.js`: Logika interaktif dan demonstrasi konsep pemrograman JavaScript.
+## Prasyarat
+*   Web Server (XAMPP / Laragon).
+*   PHP versi 7.4 atau yang terbaru.
+*   Database MySQL.
 
-## 🛠️ Teknologi yang Digunakan
+## Langkah Instalasi
 
-* HTML5: Mark-up bahasa utama.
-* CSS3: Styling (menggunakan font 'Segoe UI', Flexbox, dan transisi button).
-* JavaScript: Interaktivitas sisi klien.
+### 1. Persiapan Database
+Buat database baru melalui phpMyAdmin dengan nama `belajar`, kemudian jalankan query SQL berikut untuk membuat tabel `users`:
 
-## 📝 Cara Menjalankan Proyek
+```sql
+CREATE TABLE users (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    nama VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL
+);
+```
 
-1.  Clone atau download repository ini.
-2.  Pastikan semua file (`index.html`, `style.css`, `script.js`) berada dalam folder yang sama.
-3.  Buka file `index.html` menggunakan browser favorit Anda (Chrome, Firefox, Edge).
-4.  Gunakan tombol F12 atau Inspect > Console pada browser untuk melihat log JavaScript yang berjalan.
+### 2. Konfigurasi Koneksi
+Pastikan file `koneksi.php` sudah sesuai dengan pengaturan server lokal kamu:
+```php
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db   = "belajar";
+```
 
+### 3. Penempatan File
+1. Salin semua file proyek ke dalam folder server:
+   - Jika menggunakan XAMPP: `C:/xampp/htdocs/nama_folder/`
+   - Jika menggunakan Laragon: `C:/laragon/www/nama_folder/`
+2. Masukkan file gambar `CHATGPT Image Apr 15, 2026, 07_22_56 AM.png` ke dalam folder yang sama agar tampilan header muncul.
 
-### Screenshot Struktur Halaman
-![ss-an.web](ss-an.web/tampilan-1)
-![ss-an.web](ss-an.web/tampilan-2)
-![ss-an.web](ss-an.web/tampilan-3)
+### 4. Cara Menjalankan
+Buka browser dan akses alamat berikut:
+`http://localhost/nama_folder/index.php`
+
+## Struktur Proyek
+*   `index.php` : Halaman utama, pemrosesan logika simpan, dan tampilan tabel.
+*   `koneksi.php` : Skrip penghubung antara PHP dan database MySQL.
+*   `README.md` : Panduan penggunaan dan dokumentasi proyek.
+
+---
+**Teknik Informatika - 2026**
